@@ -1,0 +1,30 @@
+.movie-list-container {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.movie-list li {
+  margin: 2px 0;
+  height: 20px;
+}
+
+.movie a {
+  margin: 0;
+  padding: 0;
+  color: #0e19f3;
+}
+
+.movie h2 {
+  margin-top: -5px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: solid underline;
+  line-height: 1.5;
+}

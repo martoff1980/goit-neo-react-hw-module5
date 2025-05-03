@@ -1,0 +1,71 @@
+.movie-details-page {
+  margin: 0;
+  padding: 0;
+}
+
+.movie-details-page button {
+  margin: 3px;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.movie-details {
+  margin-left: 3px;
+  display: flex;
+  gap: 10px;
+}
+
+.movie-details img {
+  width: 200px;
+  height: 300px;
+}
+
+.movie-info {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.movie-info h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.movie-info h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.movie-info h4 {
+  margin-top: 20px;
+}
+
+.movie-info p,
+ul {
+  margin-top: 10px;
+}
+
+.movie-info ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.additional-info {
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+nav p {
+  margin-left: 3px;
+}

@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  min-width: 1280px;
+  margin: 0;
+  gap: 10px;
+  justify-content: flex-start;
+  background-color: white;
+  border-bottom: 3px solid #eaeaea;
+}
+
+.navigation a {
+  color: #696060;
+  padding: 5px;
+}
+
+.navigation a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.navigation .active {
+  color: red;
+}
