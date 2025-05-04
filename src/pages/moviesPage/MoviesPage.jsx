@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams, Link, Outlet } from 'react-router-dom';
 import MovieList from '../../components/movieList/MovieList';
 import { searchMovies } from '../../tmdb-api';
 import './MoviesPage.css';
@@ -14,8 +14,6 @@ const MoviesPage = () => {
     searchMovies(query).then(setMovies);
   }, [query]);
 
-  // console.log('MoviesPage render', movies, query);
-
   const handleSubmit = e => {
     e.preventDefault();
     const value = e.target.elements.query.value.trim();
@@ -29,6 +27,7 @@ const MoviesPage = () => {
         <button type="submit">Search</button>
       </form>
       <MovieList movies={movies} />
+      <Outlet />
     </div>
   );
 };
