@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useLocation, useSearchParams, Link, Outlet } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import MovieList from '../../components/movieList/MovieList';
 import { searchMovies } from '../../tmdb-api';
 import './MoviesPage.css';
@@ -27,7 +27,6 @@ const MoviesPage = () => {
         <button type="submit">Search</button>
       </form>
       <MovieList movies={movies} />
-      <Outlet />
     </div>
   );
 };

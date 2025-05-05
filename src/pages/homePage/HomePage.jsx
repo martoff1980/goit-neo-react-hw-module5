@@ -1,6 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { useLocation, Link, Outlet } from 'react-router-dom';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import MovieList from '../../components/movieList/MovieList';
 import { getTrendingMovies } from '../../tmdb-api';
 import './HomePage.css';
@@ -9,7 +7,6 @@ const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-  const location = useLocation();
 
   useEffect(() => {
     getTrendingMovies()
@@ -18,7 +15,7 @@ const HomePage = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <p>Завантаження...</p>;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
   return (
