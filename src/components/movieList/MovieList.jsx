@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './MovieList.css';
 
 const MovieList = ({ movies }) => {
+  const location = useLocation();
+
   return (
     <div className="movie-list-container">
       <ul className="movie-list">
